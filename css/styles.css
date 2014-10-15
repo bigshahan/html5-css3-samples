@@ -87,7 +87,61 @@ header, section {
 	}
 }
 
+@-moz-keyframes jitter {
+	0% {
+		top: -2px;
+		left: -2px;
+	}
+
+	50% {
+		top: 2px;
+		left: 2px;
+	}
+
+	100% {
+		top: 0px;
+		left: 0px;
+	}
+}
+
+@keyframes jitter {
+	0% {
+		top: -2px;
+		left: -2px;
+	}
+
+	50% {
+		top: 2px;
+		left: 2px;
+	}
+
+	100% {
+		top: 0px;
+		left: 0px;
+	}
+}
+
 @-webkit-keyframes flashing {
+	from {
+		background: #f1c40f;
+	}
+
+	to {
+		background: none;
+	}
+}
+
+@-moz-keyframes flashing {
+	from {
+		background: #f1c40f;
+	}
+
+	to {
+		background: none;
+	}
+}
+
+@keyframes flashing {
 	from {
 		background: #f1c40f;
 	}
@@ -104,6 +158,8 @@ h1.flashing {
 	padding: .2em;
 	font-size: 32px;
 	-webkit-animation: flashing 150ms infinite;
+	-moz-animation: flashing 150ms infinite;
+	animation: flashing 150ms infinite;
 }
 
 nav ul {
@@ -127,6 +183,8 @@ nav ul li {
 nav ul li:hover {
 	color: darkgray;
 	-webkit-animation: jitter 150ms infinite;
+	-moz-animation: jitter 150ms infinite;
+	animation: jitter 150ms infinite;
 }
 
 nav ul li.selected {
