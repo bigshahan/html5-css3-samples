@@ -3,7 +3,7 @@ body {
 	padding-bottom: 500px;
 }
 
-section {
+header, section {
 	text-align: center;
 	padding: 20px;
 }
@@ -67,4 +67,80 @@ section {
 
 .btn-transition {
 	transition: background 1s;
+}
+
+/* Navbar Animations */
+@-webkit-keyframes jitter {
+	0% {
+		top: -2px;
+		left: -2px;
+	}
+
+	50% {
+		top: 2px;
+		left: 2px;
+	}
+
+	100% {
+		top: 0px;
+		left: 0px;
+	}
+}
+
+@-webkit-keyframes flashing {
+	from {
+		background: #f1c40f;
+	}
+
+	to {
+		background: none;
+	}
+}
+
+/* Navigation */
+h1.flashing {
+	display: inline-block;
+	border-radius: 5px;
+	padding: .2em;
+	font-size: 32px;
+	-webkit-animation: flashing 150ms infinite;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: .5em;
+	font-size: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 0px 1em;
+	color: lightgray;
+	position: relative;
+}
+
+
+nav ul li:hover {
+	color: darkgray;
+	-webkit-animation: jitter 150ms infinite;
+}
+
+nav ul li.selected {
+	background: #3498db;
+	color: white;
+}
+
+/* Code */
+pre.code {
+	text-align: left;
+	max-width: 395px;
+	display: block;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
 }

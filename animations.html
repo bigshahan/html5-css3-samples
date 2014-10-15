@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HTML5 CSS 3 Samples</title>
+
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li class="selected">Home</li>
+					<li>Past Work</li>
+					<li>Blog</li>	
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<h1 class="flashing">CSS3 Animations</h1>
+
+			<h1>Jitter Animation</h1>
+			<pre class="code">
+@keyframes jitter {
+	0% {
+		top: -2px;
+		left: -2px;
+	}
+
+	50% {
+		top: 2px;
+		left: 2px;
+	}
+
+	100% {
+		top: 0px;
+		left: 0px;
+	}
+}
+</pre>
+
+			<h1>Flashing Animation</h1>
+
+			<pre class="code">
+@keyframes flashing {
+	from {
+		background: #f1c40f;
+	}
+
+	to {
+		background: none;
+	}
+}
+</pre>
+			<h1>Applying the Animation</h1>
+
+			<pre class="code">
+nav ul li:hover {
+	-webkit-animation: jitter 150ms infinite;
+}
+</pre>
+			<h1>Don&apos;t Forget the Browser Specific Prefixes!</h1>
+
+			<pre class="code">
+@-webkit-keyframes flashing {
+	...
+}
+
+@-moz-keyframes flashing {
+	...
+}
+
+@keyframes flashing {
+	...
+}
+
+nav ul li:hover {
+	-webkit-animation: ...;
+	-moz-animation: ...;
+	animation: ...;
+}
+</pre>
+		</section>
+
+		<script src="js/jquery.js"></script>
+	</body>
+</html>
