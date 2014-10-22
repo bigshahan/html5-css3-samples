@@ -60,7 +60,16 @@ header, section {
 	background: #f39c12;
 }
 
-.btn-yellow:active {
+.btn-red {
+	background: #dc2000;
+	color: white;
+}
+
+.btn-red:hover {
+	background: darkred;
+}
+
+.btn:active {
 	position: relative;
 	top: 2px;
 }
@@ -190,6 +199,14 @@ nav ul li:hover {
 nav ul li.selected {
 	background: #3498db;
 	color: white;
+}
+
+/* Button Jitter */
+.btn-jitter {
+	position: relative;
+	-webkit-animation: jitter 150ms infinite;
+	-moz-animation: jitter 150ms infinite;
+	animation: jitter 150ms infinite;
 }
 
 /* Code */
