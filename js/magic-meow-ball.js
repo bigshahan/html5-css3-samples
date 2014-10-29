@@ -18,7 +18,7 @@ function randomReply() {
 while (true) {
 	// Prompt user a question
 	// And save there answer in a variable
-	var question = prompt('What\'s your question');
+	
 
 	// if question is null, run break
 	
