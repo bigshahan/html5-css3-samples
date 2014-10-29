@@ -14,8 +14,8 @@ function randomReply() {
 // Output 'Magic Meow Ball!' to the console
 
 
-// loop forever!
-while (true) {
+// loop for a long time!
+for (var i = 0; i < 100; i++) {
 	// Prompt user a question
 	// And save there answer in a variable
 	
