@@ -11,22 +11,23 @@ function randomReply() {
 	return array[Math.round(Math.random()*(array.length - 1))];
 }
 
-// Output 'Magic Meow Ball!' to the console
+// Output Magic Meow Ball!
+console.log('Magic Meow Ball!');
 
-
-// loop for a long time!
-for (var i = 0; i < 100; i++) {
+// loop forever!
+while (true) {
 	// Prompt user a question
 	// And save there answer in a variable
-	
+	var question = prompt('What\'s your question');
 
-	// if question is null, run break
-	
+	if (question === null) {
+		break;
+	}
 
 	// Output there question to the console
-	
+	console.log(question);
 
 	// Output a reply to the console
 	// Use randomReply() to generate the response
-	
+	console.log(randomReply());
 }
