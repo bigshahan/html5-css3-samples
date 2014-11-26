@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Todo</title>
+
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Todo</h1>
+
+		<form id="add-todo-form">
+			<input placeholder="todo" />
+			<input type="submit" value="Add Item" />
+		</form>
+
+		<ul>
+			<li><input type="checkbox" />Cool Todo Item <button>Delete</button></li>
+
+			<li><input type="checkbox" />Cool Todo Item 2<button>Delete</button></li>
+
+			<li class="complete"><input value="1" type="checkbox" checked="true" />Cool Todo Item 3<button>Delete</button></li>
+		</ul>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/todo.js"></script>
+	</body>
+</html>
