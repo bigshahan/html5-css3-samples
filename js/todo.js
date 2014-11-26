@@ -20,13 +20,15 @@ $(function() {
 	// Todo Form Submit Handler
 	var handleSubmit = function (e) {
 		e.preventDefault();
-		
+
 		console.log('Form was submitted');
 
 		// Get the todo input value
+		// HINT: use jquery to select the input. and then call the val() method
 
+		// Output value to the console
 
-		// Add the todo item
+		// Add the todo item (using the addTodoItem function)
 	};
 
 	// Setup event handlers
