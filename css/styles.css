@@ -10,7 +10,7 @@ header, section {
 
 /* Todo app */
 .complete {
-	
+    text-decoration: line-through;
 }
 
 /* Boxes */
