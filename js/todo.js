@@ -1,6 +1,6 @@
 $(function() {
 	// Function to add a todo item
-	var addTodoItem(todo) {
+	var addTodoItem = function (todo) {
 		// Create a string with html for a list item
 
 
@@ -11,14 +11,14 @@ $(function() {
 		
 
 		// Add a click handler to the delete button in the list item
-		
+
 
 		// Add a click handler to the input checkbox in the list item
 
 	};
 
 	// Todo Form Submit Handler
-	var handleSubmit = function() {
+	var handleSubmit = function () {
 		console.log('Form was submitted');
 
 		// Get the todo input value
