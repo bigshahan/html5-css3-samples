@@ -18,7 +18,9 @@ $(function() {
 	};
 
 	// Todo Form Submit Handler
-	var handleSubmit = function () {
+	var handleSubmit = function (e) {
+		e.preventDefault();
+		
 		console.log('Form was submitted');
 
 		// Get the todo input value
